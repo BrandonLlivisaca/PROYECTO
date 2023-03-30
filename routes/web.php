@@ -1,5 +1,7 @@
 <?php
-use App\Http\Controllers\Tarea_Controller;
+use App\Http\Controllers\Roles_Controller;
+use App\Http\Controllers\User_Controller;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,10 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('tarea/registrar', [Tarea_Controller::class, 'create'])->name('tarea.create');
-Route::post('tarea/guardar', [Tarea_Controller::class, 'store'])->name('tarea.store');
-Route::get('tarea/listar', [Tarea_Controller::class, 'index'])->name('tarea.index');
+Route::get('rol/registrar',[Roles_Controller::class, 'create'])->name('roles.create');
+Route::post('rol/guardar', [Roles_Controller::class, 'store'])->name('roles.store');
+Route::get('rol/listar', [Roles_Controller::class, 'index'])->name('roles.index');
 
 
-Route::get('tarea/{tarea}/editar', [Tarea_Controller::class, 'edit'])->name('tarea.edit');
-Route::put('tarea/{tarea}/actualizar',[Tarea_Controller::class, 'update'])->name('tarea.update');
+Route::get('user/registrar',[User_Controller::class, 'create'])->name('user.create');
+Route::get('user/listar', [User_Controller::class, 'index'])->name('user.index');

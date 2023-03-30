@@ -1,14 +1,13 @@
 @extends('tema.app')
 
-@section('title',"Nueva tarea")
+@section('title',"Nueva Rol")
 
 @section('contenido')
     <h3>
-        Registrar tarea
+        Registrar Roles
     </h3>
 
-    <form action="{{ route('tarea.store') }}" method="POST">
-        {{-- para enviar el formulario es importante tener @csrf --}}
+    <form action="{{ route('roles.store') }}" method="POST">
         <x-tarea-for-body/>
     </form>
 

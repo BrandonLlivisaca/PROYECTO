@@ -12,12 +12,14 @@
     <div class="container shadow bg-white">
         <div class="row">
             <div class="col-sm-12">
-                <h1>Tutorial</h1>
+                <h1>Prueba Tecnica</h1>
             </div>
 
             <div class="col-sm-12">
-                <a href="{{ route('tarea.create') }}" class="btn btn-link">Crear nueva tarea</a>
-                <a href="{{ route('tarea.index') }}" class="btn btn-link">Listar tareas</a>
+                <a href="{{ route('roles.create') }}" class="btn btn-link">Crear nuevo rol</a>
+                <a href="{{ route('roles.index') }}" class="btn btn-link">Listar roles</a>
+                <a href="{{ route('user.create') }}" class="btn btn-link">Crear nuevo usuario</a>
+                <a href="{{ route('user.index') }}" class="btn btn-link">Listar usuarios</a>
             </div>
 
             <div class="col-sm-12">
